@@ -1,0 +1,14 @@
+{
+  "name": "animejsproject",
+  "version": "1.0.0",
+  "description": "anime js test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vovu",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^2.2.0"
+  }
+}

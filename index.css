@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+
+body{
+  background-color: rgb(90, 196, 102);
+
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+}
+h1.ml8{
+  font-size: 4em;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  z-index: 2;
+
+}
+.circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+transform-origin: -0% -0%;
+}
+.circle-dark{
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 3em;
+  z-index: 1;
+  background-color: rgb(37, 34, 43);
+}
+.circle-white{
+
+  width: 4em;
+  height: 4em;
+  border: 2px dashed white;
+  transform: scale(0);
+  border-radius: 2em;
+}
+
+.circle-dark-dashed{
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 3em;
+  border: 2px dashed rgb(37, 34, 43);
+  transform-origin: -0% -0%;
+}
+
+
+.letters-container{
+  position: absolute;
+  height: 1em;
+}
+.letters{
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  line-height: 0.6em;
+
+}
+.bang{
+  font-size: 1.4em;
+  top: 0.1em;
+}
+
+.nav{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  background-color: white;
+
+}
+.vertLine{
+
+
+  background-color:  rgb(37, 34, 43);
+  width: 20px;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+
+  margin: 0px;
+  display: inline-block;
+}
+.ul-container>ul{
+  margin: 0;
+  font-size: 1.5em;
+  color: rgb(37, 34, 43);
+  list-style: none;
+  padding: 0px 20px 0px 40px;
+
+}
+.ul-container{
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.ul-container>ul>li{
+
+  letter-spacing: 3px;
+  border-bottom: 2px dashed  rgb(37, 34, 43);
+}
+.ul-container>ul>li:not(:first-child){
+  margin-top: 8px;
+}
+
+.nav-btn{
+  width: 4em;
+  height: 4em;
+  background-color: white;
+  border-radius: 2em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.cursor{
+  position: absolute;
+  transform-origin: -0% -0%;
+  top:300px;
+  left:300px;
+  width: 4em;
+  transform: scale(0);
+  z-index: 10;
+  height: 4em;
+  border-radius: 3em;
+  background-color: rgb(109, 148, 209);
+  pointer-events: none;
+}
+
+a{
+  text-decoration: none;
+}
