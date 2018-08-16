@@ -32,6 +32,19 @@ transform-origin: -0% -0%;
   z-index: 1;
   background-color: rgb(37, 34, 43);
 }
+.pageLoad{
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  width: 4em;
+  height: 4em;
+  border-radius: 4em;
+  background-color: rgb(101, 162, 219);
+  z-index: 20;
+  transform:  scale(40);
+
+}
+
 .circle-white{
 
   width: 4em;

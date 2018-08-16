@@ -1,5 +1,30 @@
+window.addEventListener('pageshow',()=>{
+  console.log('hey you joined us!');
+
+  anime({
+    targets: '.pageLoad',
+
+    scale: [70,70],
+    translateX: ['0%','50%'],
+    translateY: ['0%','50%'],
+    left: ['0vw','100vw'],
+    top: ['0vh','100vh'],
+    duration: 1000,
+    easing: 'easeOutExpo',
+    delay: 1200
+  });
+})
+
+window.addEventListener('load', (e) =>{
+
+//});
+
+//document.addEventListener('DOMContentLoaded',() =>{
+
+
+
 console.log('hello');
-import {text} from './module.js';
+//import {text} from './module.js';
 
 
 anime.timeline({
@@ -61,6 +86,9 @@ anime.timeline({
 });
 
 let navBtn = document.querySelector('.nav-btn');
+//let navBtn = document.getElementsByClassName('nav-btn');
+console.log(navBtn);
+
 let isNavActive = false;
 let navAnim = anime.timeline({
   autoplay : false
@@ -135,4 +163,6 @@ console.log(`Is nav: ${isNav}`);
 
 
   }
+});
+
 });
