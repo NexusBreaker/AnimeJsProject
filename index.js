@@ -170,17 +170,19 @@ console.log(`Is nav: ${isNav}`);
 
   }
 });
-let link = document.querySelector('a');
-link.addEventListener('click', (e)=>{
-  e.preventDefault();
-  pageAppear.completed = false;
-  pageAppear.reverse();
-  console.log(e.target.href);
-  pageAppear.play();
+let link = document.querySelectorAll('a');
+link.forEach((element)=>{
+  element.addEventListener('click', (e)=>{
+    e.preventDefault();
+    pageAppear.completed = false;
+    pageAppear.reverse();
+    console.log(e.target.href);
+    pageAppear.play();
 
-  pageAppear.complete = () =>{
-      window.location.href = e.target.href;
-  };
+    pageAppear.complete = () =>{
+        window.location.href = e.target.href;
+    };
+  });
 });
 
 });
