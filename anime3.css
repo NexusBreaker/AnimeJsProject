@@ -1,0 +1,12 @@
+.dot-container{
+  margin-left: 50vw;
+  margin-top: 50vh;
+  transform: translate(-25%,-25%);
+}
+.dot{
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  display: inline-block;
+  background-color: white;
+}

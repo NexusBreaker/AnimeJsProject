@@ -1,7 +1,9 @@
+let pageAppear;
+
 window.addEventListener('pageshow',()=>{
   console.log('hey you joined us!');
 
-  anime({
+  pageAppear = anime({
     targets: '.pageLoad',
 
     scale: [70,70],
@@ -9,10 +11,12 @@ window.addEventListener('pageshow',()=>{
     translateY: ['0%','50%'],
     left: ['0vw','100vw'],
     top: ['0vh','100vh'],
-    duration: 1000,
+    duration: 1500,
     easing: 'easeOutExpo',
-    delay: 1200
+    delay: 100
   });
+
+
 })
 
 window.addEventListener('load', (e) =>{
@@ -26,9 +30,11 @@ window.addEventListener('load', (e) =>{
 console.log('hello');
 //import {text} from './module.js';
 
-
 anime.timeline({
-  loop: true
+  loop: true,
+
+}).add({
+  delay: 10
 }).add({
   targets: '.circle-white',
   scale: [0,2],
@@ -163,6 +169,18 @@ console.log(`Is nav: ${isNav}`);
 
 
   }
+});
+let link = document.querySelector('a');
+link.addEventListener('click', (e)=>{
+  e.preventDefault();
+  pageAppear.completed = false;
+  pageAppear.reverse();
+  console.log(e.target.href);
+  pageAppear.play();
+
+  pageAppear.complete = () =>{
+      window.location.href = e.target.href;
+  };
 });
 
 });
