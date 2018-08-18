@@ -1,0 +1,19 @@
+.container{
+  background-color: white;
+}
+.display-1{
+  letter-spacing: 10px;
+}
+input{
+  border-style: solid;
+  border-width: .5px;
+  border-color: rgb(74, 74, 74);
+  border-radius: 6px;
+}
+input:focus{
+  outline: none;
+  border-style: solid;
+  border-width: .5px;
+  border-color: rgb(84, 137, 193);
+  border-radius: 6px;
+}
